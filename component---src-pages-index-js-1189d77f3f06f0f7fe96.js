@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgraciela_araujo=self.webpackChunkgraciela_araujo||[]).push([[293],{9639:function(e,a,l){l.r(a),l.d(a,{Head:function(){return r}});var n=l(6540),t=l(2336);a.default=()=>n.createElement("main",null,n.createElement(t.A,null),n.createElement("h1",null,"Graciela Araujo"),n.createElement("p",null,"Coming soon."));const r=()=>n.createElement("title",null,"Home Page")}}]);
+//# sourceMappingURL=component---src-pages-index-js-1189d77f3f06f0f7fe96.js.map

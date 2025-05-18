@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgraciela_araujo=self.webpackChunkgraciela_araujo||[]).push([[432],{9434:function(e,a,l){l.r(a);var n=l(6540),u=l(2336);a.default=()=>n.createElement("main",null,n.createElement(u.A,null),n.createElement("h1",null,"Coming soon"))}}]);
+//# sourceMappingURL=component---src-pages-about-js-7b1d36aea3bf5a316fbf.js.map
