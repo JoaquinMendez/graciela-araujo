@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #ecf3f3;
+  font-family: 'Montserrat', sans-serif;
+  color: #55514e
+}
+
+a, div, button {
+  color: #55514e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e33916;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+h1 {
+  letter-spacing: -0.25rem;
+  font-size: 6rem;
+  line-height: 8rem;
+}

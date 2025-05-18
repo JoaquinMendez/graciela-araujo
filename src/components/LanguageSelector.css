@@ -1,0 +1,67 @@
+/* LanguageSelector.css */
+
+.language-selector {
+  position: relative;
+  display: inline-block;
+  font-size: 0.875rem;
+}
+
+.language-visible-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #ecf3f3; /* Keep the border on the button */
+  border-radius: 0.5rem; /* Keep the border-radius on the button */
+  background: #ecf3f3; /* Add a background to the button if it doesn't have one */
+  padding: 0.5rem 1rem; /* Add some padding to the button */
+  cursor: pointer;
+}
+
+.language-current {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.arrow {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.3s ease;
+  margin-left: auto; /* Push the arrow to the right */
+}
+
+.arrow.rotated {
+  transform: rotate(180deg);
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0; /* Remove the top margin */
+  background: #ecf3f3;
+  border-left: 1px solid #ecf3f3; /* Add left border */
+  border-right: 1px solid #ecf3f3; /* Add right border */
+  border-bottom-left-radius: 0.5rem; /* Add bottom-left radius */
+  border-bottom-right-radius: 0.5rem; /* Add bottom-right radius */
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  min-width: 100%; /* Make it the same width as the button */
+  overflow: hidden; /* To contain rounded corners */
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.language-option:hover {
+  background-color: #ecf3f3;
+}
