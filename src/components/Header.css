@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.topRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.navigationHeader {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.navigationHeader > a:hover {
+  color: black;
+}
+
+.socialAndLang {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
