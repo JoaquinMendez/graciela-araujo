@@ -1,0 +1,19 @@
+.hightlight-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.hightlight-item > p,
+.hightlight-item > div {
+    margin-bottom: 0.5rem;
+}
+
+.paint-image {
+  /* This CSS controls the *display* max-width of the image */
+  max-width: 100%; /* Ensures image doesn't overflow its parent */
+  height: auto;    /* Crucial: Ensures height adjusts to maintain aspect ratio */
+  display: block;  /* Optional: removes extra space below images */
+  /* You can also explicitly set a max-width if needed, e.g., */
+  /* max-width: 300px; */
+  /* If you want the image itself to never exceed 300px wide, regardless of its parent */
+}
