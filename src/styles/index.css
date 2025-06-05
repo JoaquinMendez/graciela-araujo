@@ -29,10 +29,6 @@
   margin: 0.5rem;
 }
 
-.initial-text {
-  
-}
-
 /* Style for the middle column (containing the image) to ensure the image is centered within it */
 .introduction > div:nth-child(2) { /* Targets the second div (the image container) */
   display: flex;

@@ -23,7 +23,6 @@ const StoreCatalogComponent = () => {
                             <GatsbyImage
                                 image={image}
                                 alt={paint.name} // Use paint.name for accessibility
-                                className="paint-card-image" // Add a class for styling the image
                             />
                         ) : (
                             <img
@@ -32,8 +31,10 @@ const StoreCatalogComponent = () => {
                                 style={{ width: '400px', height: '300px', objectFit: 'cover' }} // Match GatsbyImage dimensions
                             />
                         )}
-                        <div>{paint.name}</div>
+                        <div className='paint-name'>{paint.name}</div>
                         <p>{t('HightlightItem_Dim')}: {paint.getDimensions()}</p>
+                        <p>{paint.description}</p>
+                        <div className='explore-text'>{t('Store_SeeMore')}</div>
                     </div>
                 );
             })}

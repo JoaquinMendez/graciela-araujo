@@ -25,3 +25,16 @@
   text-align: center;
 }
 
+.paint-name {
+  margin-top: 2rem;
+}
+
+.explore-text {
+  transition: color 0.3s ease; /* Add transition back to text */
+}
+
+.explore-text:hover {
+  color: #e33916;
+  cursor: pointer;
+}
+
