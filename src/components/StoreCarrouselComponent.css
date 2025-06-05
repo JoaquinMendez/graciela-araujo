@@ -1,0 +1,83 @@
+/* Ensure the main slider container doesn't overflow */
+.slider-container {
+  /* Set a max-width if you want the slider to not take 100% always */
+  /* max-width: 800px; */ /* Example: adjust as needed */
+  /* margin: 0 auto; */ /* Center the slider if max-width is set */
+
+  /* Crucial for preventing horizontal scroll from children */
+  overflow: hidden; 
+  position: relative; /* Needed for slick arrows/dots positioning later */
+  padding: 4rem;
+}
+
+.carrousel-item {
+    display: flex  !important;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.divider-carrousel { 
+  width: 15rem;
+  height: 0.15rem;
+  background-color: #e33916;
+}
+
+.price-section-carrousel{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.consult-button {
+  /* This div just acts as a wrapper. No flex properties needed here unless for its own parent */
+  /* Remove any conflicting display properties if they were here */
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Style the anchor tag directly for flex alignment */
+.consult-button a {
+  display: flex; /* Make the anchor tag a flex container */
+  align-items: center; /* Vertically center items (icon and text) */
+  gap: 10px; /* Space between the icon and the text */
+  text-decoration: none; /* Remove default underline from the link */
+  color: inherit; /* Ensure the link text inherits color from its parent .consult-button */
+}
+
+.consult-button:hover {
+  color: #e33916; /* Red on hover for both icon and text */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #55514e !important; /* Your default grey color */
+  /* You might also need to adjust font-size if the icon is too small/large */
+  /* font-size: 20px; */ /* Example: adjust as needed */
+}
+
+/* Keep your existing rule for the button itself if it contains text like "Next" or "Prev" */
+.slick-prev,
+.slick-next {
+  color: #55514e !important; /* This will affect any direct text content of the button */
+  /* Make sure background is transparent if you don't want a solid button */
+  background: transparent !important;
+  border: none !important;
+}
+
+.paint-image {
+    max-width: 100%; /* Ensures it doesn't exceed parent's width */
+    height: auto;    /* Crucial: maintains aspect ratio */
+    display: block;  /* Removes extra space below image */
+}
+/* Apply similar rules to the actual img tag rendered by GatsbyImage */
+.paint-image img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.carrousel-info {
+    max-width: 800px;
+}

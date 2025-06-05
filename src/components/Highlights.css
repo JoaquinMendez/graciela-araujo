@@ -1,0 +1,39 @@
+.header-hightlights {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  align-items: flex-start;
+}
+
+.header-hightlights > h2 {
+    margin-bottom: 0;
+}
+
+.header-content-hightlights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 96%;
+}
+
+.horizontal-divider-hightlights {
+    margin-top: 0.75rem;
+  width: 3.5rem;
+  height: 0.1rem;
+  background-color: #A8A8A8;
+}
+
+.body-hightlights{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    gap: 3rem;
+}
+
+

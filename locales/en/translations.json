@@ -2,5 +2,13 @@
     "Header_Home": "HOME",
     "Header_About": "ABOUT ME",
     "Header_Exibhitions": "EXHIBITIONS",
-    "Header_Store": "STORE"
+    "Header_Store": "STORE",
+    "Index_ViewMore": "EXPLORE MORE",
+    "Index_Long_Front": "",
+    "Index_Continue_Reading": "CONTINUE READING",
+    "Highlights_Title": "Featured Artwork",
+    "Hightlights_SeeAll": "SEE ALL",
+    "Hightlights_Subtitle": "Tempor ac tincidunt feugiat dignissim quis sed donec cursus ornare varius sed sagittis nibh.",
+    "HightlightItem_Dim": "Dimensions",
+    "Store_SeeMore": "SEE MORE"
 }

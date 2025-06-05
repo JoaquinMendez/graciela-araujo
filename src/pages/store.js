@@ -1,12 +1,15 @@
 import React from 'react';
 import {graphql} from 'gatsby';
 import HeaderComponent from '../components/Header.tsx';
+import StoreCatalogComponent from '../components/StoreCatalog.tsx';
+import StoreCarrouselComponent from '../components/StoreCarrouselComponent.tsx';
 
 const StorePage = () => {
   return (
     <main>
       <HeaderComponent/>
-      <h1>Coming soon</h1>
+      <StoreCarrouselComponent/>
+      <StoreCatalogComponent/>
     </main>
   )
 }

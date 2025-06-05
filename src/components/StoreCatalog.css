@@ -1,0 +1,40 @@
+/* StoreCatalog.css */
+
+.store-catalog {
+  display: flex;       /* Enable Flexbox */
+  flex-direction: row; /* Arrange items in a row (default, but good to be explicit) */
+  flex-wrap: wrap;     /* Allow items to wrap to the next line if they exceed container width */
+  justify-content: center; /* Optional: Center the items horizontally within the container */
+  align-items: center; /* Align items along their baseline */
+  gap: 7rem;           /* Provides space between items both horizontally and vertically */
+  padding: 4rem;       /* Optional: Add some padding around the whole catalog */
+  width: 100%;         /* Ensure the catalog takes full width to allow wrapping */
+  max-width: 1200px;   /* Optional: Constrain the overall width of the catalog itself */
+  margin: 0 auto;      /* Optional: Center the whole catalog */
+}
+
+.paint-card {
+  flex: 0 0 calc(33.333% - 5rem); /* flex-grow: 0, flex-shrink: 0, flex-basis: calc() */
+                                  /* Adjust '20px' based on your 'gap' value */
+                                  /* (gap * (number of gaps between items) / number of items) */
+                                  /* For 3 items and 20px gap, it's (20px * 2) / 3 ≈ 13.33px per item side */
+                                  /* so for a gap on both sides, 20px is a good start to account for it. */
+  max-width: calc(33.333% - 10rem); /* Explicit max-width to ensure it doesn't grow beyond 3 per row */
+  min-width: 250px; /* Optional: Ensure cards don't get too small on tiny screens */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  text-align: center;
+}
+
+.paint-name {
+  margin-top: 2rem;
+}
+
+.explore-text {
+  transition: color 0.3s ease; /* Add transition back to text */
+}
+
+.explore-text:hover {
+  color: #e33916;
+  cursor: pointer;
+}
+
