@@ -4,11 +4,17 @@
     "Header_Exibhitions": "EXHIBITIONS",
     "Header_Store": "STORE",
     "Index_ViewMore": "EXPLORE MORE",
-    "Index_Long_Front": "",
+    "Index_Painter": "Painter.",
+    "Index_Plastic": "Plastic artist.",
+    "Index_Long_Front": "I paint because loving intensely and unconditionally is my path, and in pursuit of this, I express through my art what I perceive from the world. I want to find the essence.",
     "Index_Continue_Reading": "CONTINUE READING",
+    "Index_About_Header": "Everything that is vulnerable deserves to be seen. Every color, like all life, has something to say.",
+    "Index_About_Intro": "",
+    "Index_About_Description": "",
     "Highlights_Title": "Featured Artwork",
     "Hightlights_SeeAll": "SEE ALL",
-    "Hightlights_Subtitle": "Tempor ac tincidunt feugiat dignissim quis sed donec cursus ornare varius sed sagittis nibh.",
+    "Hightlights_Subtitle": "A selection of works that reflect the style, sensitivity and artistic evolution.",
     "HightlightItem_Dim": "Dimensions",
-    "Store_SeeMore": "SEE MORE"
+    "Store_SeeMore": "SEE MORE",
+    "About_First_Section_Title": "About me"
 }

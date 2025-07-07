@@ -22,8 +22,8 @@ const HighlightsComponent = () => {
                 <h2>{t('Highlights_Title')}</h2>
                 <div className='header-content-hightlights'>
                     <p>{t('Hightlights_Subtitle')}</p>
-                    <div>
-                        {t('Hightlights_SeeAll')}
+                    <div className="explore-text">
+                        <a href="/store">{t('Hightlights_SeeAll')}</a>
                         <div className="horizontal-divider-hightlights"></div>
                     </div>
                 </div>
