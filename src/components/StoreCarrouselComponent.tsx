@@ -44,7 +44,11 @@ const StoreCarrouselComponent = () => {
                                 />
                             )}
                             <div className='carrousel-info'>
-                                <h1>{paint.name}</h1>
+                                {paint.name.length > 30 ? (
+                                    <h2 className="paint-name">{paint.name}</h2> // Use h2 if length > 30
+                                ) : (
+                                    <h1 className="paint-name">{paint.name}</h1> // Use h1 otherwise
+                                )}
                                 <p>{t('HightlightItem_Dim')}: {paint.getDimensions()}</p>
                                 <p>{paint.description}</p>
                                 <div className='divider-carrousel'></div>

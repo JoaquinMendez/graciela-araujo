@@ -16,9 +16,9 @@ const IndexPage = () => {
       <div className="introduction">
         <div>
           <h1>Graciela Araujo</h1>
-            <p>Pintora abstracta.</p>
+            <p>{t('Index_Painter')}</p>
             <br/>
-            <p>Artista plástica.</p>
+            <p>{t('Index_Plastic')}</p>
         </div>
         <div>
           <StaticImage
@@ -51,7 +51,7 @@ const IndexPage = () => {
         </div>
         <div className="vertical-divider"></div>
         <div className='header-about'>
-          <h2>Descripción breve sobre tí o de tu trabajo, que llame la atención del usuario</h2>
+          <h2>{t('Index_About_Header')}</h2>
         </div>
         <div className='about-container'>
           <StaticImage
@@ -62,11 +62,11 @@ const IndexPage = () => {
             placeholder="none"
           />
           <div className='about-text'>
-            <p>Descripción más larga acerca de tí o tu trabajo, algo que quieras transmitir al visitante de la página</p>
+            <p>{t('Index_About_First')}</p>
             <br/>
-            <p>Malesuada id lorem non magna tortor duis sit blandit pulvinar enim turpis dui purus augue nec, eget sit sapien aliquam iaculis at erat sit porttitor massa tristique feugiat aliquam pellentesque vulputate tincidunt augue at duis mauris dictum urna amet ut quisque</p>
+            <p>{t('Index_About_Second')}</p>
             <br/>
-            <div className="explore-text">{t('Index_Continue_Reading')}</div>
+            <div className="explore-text"><a href="/about">{t('Index_Continue_Reading')}</a></div>
             <div className="continue-reading-divider"></div>
           </div>
         </div>
@@ -78,7 +78,7 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Graciela Araujo</title>
 
 export const query = graphql`
   query ($language: String!) {

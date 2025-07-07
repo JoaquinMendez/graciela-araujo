@@ -1,0 +1,16 @@
+.header-about-first-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    align-items: center;
+}
+
+.header-about-first-section > h2 {
+    margin-top: 0;
+}
+
+.biography {
+    width:70%;
+}

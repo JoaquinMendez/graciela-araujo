@@ -1,12 +1,13 @@
 import React from 'react';
 import {graphql} from 'gatsby';
 import HeaderComponent from '../components/Header.tsx';
+import AboutFirstSectionComponent from '../components/AboutFirstSection.tsx';
 
 const AboutPage = () => {
   return (
     <main>
       <HeaderComponent/>
-      <h1>Coming soon</h1>
+      <AboutFirstSectionComponent/>
     </main>
   )
 }
