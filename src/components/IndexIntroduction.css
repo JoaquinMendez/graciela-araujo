@@ -1,0 +1,72 @@
+.introduction {
+  margin-top: 2rem;
+  display: flex;             /* Enable flex container */
+  flex-direction: row;       /* Arrange items in a row (horizontally) */
+  align-items: center;       /* Vertically align items in the center of each row */
+  justify-content: center;   /* Horizontally center the *columns* as a group */
+  padding: 20px;             /* Add some padding around the content */
+  gap: 20px;                 /* Add some space between the columns (modern flexbox way) */
+}
+
+.introduction > div {
+  flex: 1; /* Each direct child div will take up equal available space */
+  padding: 10px; /* Add some padding within each column */
+}
+
+/* Specific styling for the first column (h1 and p) */
+.introduction > div:nth-child(1) {
+  text-align: right; /* Align text to the right, towards the painting */
+}
+
+.introduction > div:nth-child(1) > h1 {
+  margin-bottom: 2rem;
+}
+
+.introduction > div:nth-child(1) > p {
+  margin: 0.5rem;
+}
+
+/* Style for the middle column (containing the image) to ensure the image is centered within it */
+.introduction > div:nth-child(2) { /* Targets the second div (the image container) */
+  display: flex;
+  justify-content: center; /* Center the image horizontally within this column */
+  align-items: center;     /* Center the image vertically within this column */
+}
+
+/* Specific styling for the third column (the paragraph) */
+.introduction > div:nth-child(3) {
+  text-align: left; /* Align text to the left, towards the painting */
+}
+
+.introduction p {
+  max-width: 300px;
+  display: inline-block;
+}
+
+.horizontal-divider {
+  margin-top: 15rem;
+  width: 3.5rem;
+  height: 0.1rem;
+  background-color: #e33916;
+}
+
+@media (max-width: 1000px)
+{
+  .introduction {
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+
+  .introduction p {
+    max-width: 500px;
+    display: inline-block;
+  }
+
+  .horizontal-divider {
+    margin-top: 1rem;
+  }
+
+  h1 {
+    margin-top: 0.5rem;
+  }
+}
