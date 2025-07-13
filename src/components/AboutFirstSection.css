@@ -14,3 +14,19 @@
 .biography {
     width:70%;
 }
+
+@media (max-width: 1000px){
+    .header-about-first-section {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .biography {
+        width: 85%;
+    }
+
+    .vertical-divider {
+        margin-top: 0 !important;
+    }
+}

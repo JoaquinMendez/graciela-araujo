@@ -71,23 +71,6 @@
   background-color: #e33916;
 }
 
-.header-about {
-  width: 75%;
-  text-align: center;
-}
-
-.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-}
-
-.about-text {
-  width: 30%;
-  text-align: start;
-}
-
 .continue-reading-divider{
   margin-top: 0.75rem;
   width: 3.5rem;

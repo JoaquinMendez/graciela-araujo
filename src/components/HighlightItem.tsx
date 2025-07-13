@@ -25,7 +25,7 @@ const HighlightItem = ({ paint }) => {
             />
             <p>{t('HightlightItem_Dim')}: {paint.getDimensions()}</p>
             <div>{paint.name}</div>
-            <div>{paint.getFormattedPrice()}</div>
+            {paint.price > 1 && <div>{paint.getFormattedPrice()}</div>}
         </div>
     );
 };
