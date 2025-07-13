@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   background-color: #ecf3f3;
   font-family: 'Montserrat', sans-serif;
-  color: #55514e
+  color: #55514e;
+  width: 100%;
 }
 
 a, div, button {

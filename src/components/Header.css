@@ -30,3 +30,34 @@
     align-items: center;
     gap: 1rem;
 }
+
+@media (max-width: 1000px)
+{
+    .header {
+        width: 100%;
+    }
+
+    .navigationHeader {
+        gap: initial;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; /* allows wrapping to new line if needed */
+        justify-content: space-between; /* or space-between */
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .nav-item {
+        min-width: 0;
+        padding: 0.5rem 1rem;
+        white-space: normal;
+        text-align: center;
+        flex: 1; /* optional: makes them share space */
+        font-size: clamp(0.6rem, 1.2vw, 1rem);
+    }
+
+    .socialAndLang {
+        margin-left: 0.5rem
+    }
+}
