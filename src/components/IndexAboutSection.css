@@ -1,0 +1,36 @@
+.header-about {
+  width: 75%;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.about-text {
+  width: 30%;
+  text-align: start;
+}
+
+@media (max-width: 1000px) {
+    .header-about {
+        width: 85%;
+    }
+
+    h2 {
+        font-size: 2rem !important;
+        letter-spacing: -0.1rem;
+        line-height: 3rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-text {
+        width: 80%;
+    }
+}
