@@ -201,4 +201,14 @@ export const paints = [
         80,
         true
     ),
+    new Paint(
+        "Silencio II",
+        "Sin descripción",
+        "Tecnica mixta",
+        "silencio_2.jpg",
+        0,
+        80,
+        100,
+        true
+    ),
 ];

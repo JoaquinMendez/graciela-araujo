@@ -9,7 +9,7 @@ const hightlightsFilenames = [
     "amor.jpg", 
     "escaleras.jpg",
     "nosotras.jpg",
-    "anonimo.jpg"
+    "silencio_2.jpg"
 ];
 
 const HighlightsComponent = () => {
