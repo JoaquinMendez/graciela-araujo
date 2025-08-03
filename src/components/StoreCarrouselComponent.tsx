@@ -53,7 +53,7 @@ const StoreCarrouselComponent = () => {
                                 <p>{paint.description}</p>
                                 <div className='divider-carrousel'></div>
                                 <div className='price-section-carrousel'>
-                                    <div>{paint.getFormattedPrice()}</div>
+                                    {paint.price > 0 && <div>{paint.getFormattedPrice()}</div>}
                                     <div className='consult-button'>
                                         <a
                                             href="https://api.whatsapp.com/send?phone=59899926560"
@@ -86,7 +86,7 @@ const query = graphql`
             width: 400
             placeholder: BLURRED
             formats: [AUTO, WEBP, AVIF]
-            layout: FIXED
+            layout: CONSTRAINED
           )
         }
       }

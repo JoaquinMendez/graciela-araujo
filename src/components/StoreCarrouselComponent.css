@@ -81,3 +81,37 @@
 .carrousel-info {
     max-width: 800px;
 }
+
+@media (max-width: 1000px) {
+    .slider-container {
+      padding: 3rem;
+    }
+
+    .carrousel-item {
+        flex-direction: column;
+    }
+
+    .carrousel-info > h1 {
+      font-size: 3rem;
+      line-height: 2.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0;
+    }
+
+    .carrousel-info > h2 {
+      font-size: 3rem;
+      line-height: 2.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .price-section-carrousel{
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+
+    .carrousel-item > .gatsby-image-wrapper {
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2); /* Adjust values as desired */
+    }
+}

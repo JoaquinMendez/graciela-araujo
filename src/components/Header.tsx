@@ -30,7 +30,7 @@ const HeaderComponent = () => {
             <div className="navigationHeader">
                 <a className='nav-item' href="/">{t('Header_Home')}</a>
                 <a className='nav-item' href="/about">{t('Header_About')}</a>
-                <a className='nav-item' href="/exhibitions">{t('Header_Exibhitions')}</a>
+                {/*<a className='nav-item' href="/exhibitions">{t('Header_Exibhitions')}</a>*/}
                 <a className='nav-item' href="/store">{t('Header_Store')}</a>
             </div>
         </header>
