@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -10,7 +10,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import './StoreCarrouselComponent.css';
 import { paints } from '../classes/paints';
 
-const StoreCarrouselComponent = () => {
+const StoreCarrouselComponent = forwardRef((_, ref) => {
     const {t} = useTranslation();
     const images = useStaticQuery(query); // Execute the GraphQL query
     const settings = {
@@ -23,7 +23,7 @@ const StoreCarrouselComponent = () => {
 
     return (
         <div className="slider-container">
-            <Slider {...settings}>
+            <Slider ref={ref} {...settings}>
                 {paints.map((paint) => {
                     const imageData = images.allFile.nodes.find(node => node.relativePath.endsWith(paint.filename));
     
@@ -71,7 +71,7 @@ const StoreCarrouselComponent = () => {
             </Slider>
         </div>
     );
-};
+});
 
 // 1. Define a GraphQL query to get all images from your 'images/paints' directory
 // This query runs once at build time and gets data for all files in that path.

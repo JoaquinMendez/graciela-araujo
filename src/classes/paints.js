@@ -1,9 +1,7 @@
-// Paint.js
-
 /**
  * Represents a single paint artwork.
  */
-export class Paint { // <-- EXPORTING THE CLASS
+export class Paint {
     /**
      * Creates an instance of Paint.
      * @param {string} name - The name of the paint.
