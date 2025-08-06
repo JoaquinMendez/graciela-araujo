@@ -11,7 +11,14 @@ const IndexAboutSectionComponent = () => {
     return (
         <div className="main-content">
             <div className="explore-more-container">
-                <div className="explore-text">{t('Index_ViewMore')}</div>
+                <div
+                    className="explore-text"
+                    onClick={() => {
+                        document.getElementById('index-header-about')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                    >
+                    {t('Index_ViewMore')}
+                </div>
                 <div className="scroll-arrow">
                     <svg
                     className="arrow-svg-icon"
@@ -25,7 +32,7 @@ const IndexAboutSectionComponent = () => {
                 </div>
             </div>
             <div className="vertical-divider"></div>
-            <div className='header-about'>
+            <div id="index-header-about" className='header-about'>
                 <h2>{t('Index_About_Header')}</h2>
             </div>
             <div className='about-container'>

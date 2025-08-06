@@ -6,13 +6,13 @@ import { useStaticQuery, graphql } from 'gatsby';
 import './StoreCatalog.css';
 import { paints } from '../classes/paints';
 
-const StoreCatalogComponent = () => {
+const StoreCatalogComponent = ({ onPaintSelect }) => {
     const {t} = useTranslation();
     const images = useStaticQuery(query); // Execute the GraphQL query
     
     return (
         <div className='store-catalog'>
-            {paints.map((paint) => {
+            {paints.map((paint, index) => {
                 const imageData = images.allFile.nodes.find(node => node.relativePath.endsWith(paint.filename));
 
                 const image = getImage(imageData);
@@ -34,7 +34,24 @@ const StoreCatalogComponent = () => {
                         <div className='paint-name'>{paint.name}</div>
                         <p>{t('HightlightItem_Dim')}: {paint.getDimensions()}</p>
                         <p>{paint.description}</p>
-                        <div className='explore-text'>{t('Store_SeeMore')}</div>
+                        
+                        <div
+                          role="button"
+                          tabIndex={0}
+                          className="explore-text"
+                          onClick={() => {
+                            onPaintSelect(index);
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                          }}
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter' || e.key === ' ') {
+                              onPaintSelect(index);
+                              window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }
+                          }}
+                        >
+                          {t('Store_SeeMore')}
+                        </div>
                     </div>
                 );
             })}
