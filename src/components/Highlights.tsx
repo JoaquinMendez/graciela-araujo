@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 
 import './Highlights.css';
 import HighlightItem from './HighlightItem';
@@ -23,7 +23,7 @@ const HighlightsComponent = () => {
                 <div className='header-content-hightlights'>
                     <p>{t('Hightlights_Subtitle')}</p>
                     <div className="explore-text">
-                        <a href="/store">{t('Hightlights_SeeAll')}</a>
+                        <Link to="/store/">{t('Hightlights_SeeAll')}</Link>
                         <div className="horizontal-divider-hightlights"></div>
                     </div>
                 </div>

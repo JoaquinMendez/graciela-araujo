@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import './IndexAboutSection.css';
@@ -48,7 +48,7 @@ const IndexAboutSectionComponent = () => {
                     <br/>
                     <p>{t('Index_About_Second')}</p>
                     <br/>
-                    <div className="explore-text"><a href="/about">{t('Index_Continue_Reading')}</a></div>
+                    <div className="explore-text"><Link to="/about/">{t('Index_Continue_Reading')}</Link></div>
                     <div className="continue-reading-divider"></div>
                 </div>
             </div>
