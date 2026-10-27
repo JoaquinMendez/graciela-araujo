@@ -2,9 +2,10 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: `/graciela-araujo`,
   siteMetadata: {
     title: `Graciela Araujo`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://joaquinmendez.github.io/graciela-araujo`
   },
   plugins: [
     "gatsby-plugin-postcss", 
@@ -57,7 +58,7 @@ module.exports = {
       localeJsonSourceName: `locales`, // name given to `gatsby-source-filesystem` plugin.
       languages: [`en`, `es`],
       defaultLanguage: `es`,
-      siteUrl: `https://example.com`,
+      siteUrl: `https://joaquinmendez.github.io/graciela-araujo`,
       // if you are using trailingSlash gatsby config include it here, as well (the default is 'always')
       trailingSlash: 'always',
       // you can pass any i18next options
